@@ -1,5 +1,121 @@
 body {
-    justify-items: center;
-    height: 100vh;
-    align-content: center;
-    }
+    background: linear-gradient(135deg, #e3e9ff, #f3f4f6);
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.80);
+    backdrop-filter: blur(10px);
+    padding: 25px;
+    width: 430px;
+    border-radius: 18px;
+    border: 1.5px solid rgba(255, 255, 255, 0.6);
+    box-shadow: 
+        0 4px 18px rgba(0,0,0,0.08),
+        0 0 0 6px rgba(255,255,255,0.4);
+}
+
+h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+#inputTask {
+    flex: 1;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+#inputDate {
+    width: 130px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+button {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 8px;
+    background-color: #6366f1;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    background-color: #4f46e5;
+}
+
+ul {
+    margin-top: 20px;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+    background: #ffffff;
+    padding: 12px;
+    border: 1px solid #e5e7eb;
+    margin-top: 12px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.task-info {
+    display: flex;
+    flex-direction: column;
+    max-width: 180px;
+}
+
+.task-date {
+    font-size: 12px;
+    color: #6b7280;
+}
+
+.complete-btn {
+    background: #10b981;
+    padding: 6px 12px;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.complete-btn:hover {
+    background: #059669;
+}
+
+.delete-btn {
+    background: #ef4444;
+    padding: 6px 12px;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.delete-btn:hover {
+    background: #f08888;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #6b7280;
+}
